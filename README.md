@@ -45,3 +45,38 @@ Exported from phpMyAdmin as SQL → `migrationdb.sql`
 - Connected from EC2 using mysql client
 
 ## 5️⃣ Import Database into RDS
+
+## 6️⃣ Update PHP App to Use RDS
+Edited `add.php` and `items.php` and replaced:
+`localhost` → `<RDS endpoint>`
+
+# 📁 Project Structure
+migration-app/  
+│── index.php  
+│── add.php  
+│── items.php  
+│── uploads/  
+│── migrationdb.sql  
+
+# 🌐 Final Result
+✔ Application fully running on AWS EC2  
+✔ Database migrated to AWS RDS MySQL  
+✔ Items displayed from cloud database  
+✔ Real-world migration workflow completed  
+
+# 💡 Future Enhancements
+- Move uploaded images to Amazon S3  
+- Add CloudFront CDN  
+- Add CI/CD using GitHub Actions  
+- Use VPC private subnets  
+- Add Load Balancer + Auto Scaling  
+
+# 👤 Author
+**Ahmed Hamed**  
+Cloud & DevOps Engineering  
+Mansoura University
+
+# 🔗 Links
+- GitHub Repository  
+- EC2 Public URL  
+- LinkedIn Project Post
